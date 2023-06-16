@@ -12,22 +12,20 @@ body {
 .container {
   max-width: 400px;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
   border-radius: 10px;
   border: 2px solid #000;
   margin: 20px;
   font-family: Arial, sans-serif;
-  text-align: center;
 }
 
 .container h1, .container p {
   color: #fff;
-  margin: 0;
-  padding: 0;
 }
 
 .container button {
-  background-color: #006400;
+  background-color: #000;
   color: #fff;
   font-family: Arial, sans-serif;
   border: none;
@@ -36,51 +34,12 @@ body {
   margin-top: 10px;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  transition: background-color 0.3s;
 }
 
 .container button:hover {
-  background-color: #003300;
-  transform: translateY(-2px);
+  background-color: #222;
 }
 
 .container button:active {
   transform: translateY(2px);
-}
-
-.container button:focus {
-  outline: none;
-}
-
-.container button::before, .container button::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  transition: all 0.3s;
-}
-
-.container button::before {
-  background: #006400;
-  border-radius: 50%;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-}
-
-.container button::after {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-}
-
-.container button:hover::before {
-  transform: scale(0);
-}
-
-.container button:hover::after {
-  transform: scale(0);
 }
