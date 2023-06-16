@@ -1,16 +1,45 @@
 body {
-    background-image: url('https://images.unsplash.com/photo-1516528387618-afa90b13e000');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .container {
-    max-width: 400px; /* Adjust the width as needed */
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Adjust the background color and opacity as desired */
-  }
+  background-image: url('https://images.unsplash.com/photo-1516528387618-afa90b13e000');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
+  border-radius: 10px;
+  border: 2px solid #000;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container h1, .container p {
+  color: #fff;
+}
+
+.container button {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.container button:hover {
+  background-color: #222;
+}
+
+.container button:active {
+  transform: translateY(2px);
+}
