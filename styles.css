@@ -8,17 +8,20 @@ body {
     align-items: center;
     height: 100vh;
   }
-
+  
+  .container h1, .container p {
+    color: #333;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+  }
+  
   .container {
     max-width: 400px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
+    margin: 0 auto;
     text-align: center;
-  }
-  
-  .container h1, .container p {
-    color: #333;
+    color: #fff;
     font-family: "Trebuchet MS", Arial, sans-serif;
   }
   
@@ -26,8 +29,9 @@ body {
     background-color: #000;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 10px 20px;
+    margin-top: 10px;
     font-family: "Trebuchet MS", Arial, sans-serif;
   }
   
