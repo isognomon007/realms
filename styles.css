@@ -1,0 +1,16 @@
+body {
+    background-image: url('https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2400x1600/eb384c08c443a3a52cc08850aa07f618/photo-1470058869958-2a77ade41c02.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    max-width: 400px; /* Adjust the width as needed */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the background color and opacity as desired */
+  }
