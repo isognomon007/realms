@@ -1,6 +1,26 @@
 // shake effect on index page
-window.addEventListener('DOMContentLoaded', () => {
+//window.addEventListener('DOMContentLoaded', () => {
+//   const container = document.querySelector('.container');
+//   container.classList.add('shake');
+//  });
+
+// shake and redirect effect on button
+  function shakePageAndRedirect() {
     const container = document.querySelector('.container');
     container.classList.add('shake');
-  });
+  
+    // Remove the shake class after a short delay
+    setTimeout(() => {
+      container.classList.remove('shake');
+      
+      // Redirect to the next page
+      window.location.href = "next-page.html";
+    }, 1000);
+  }
+  
+  // Get the button element
+  const button = document.getElementById('path1');
+  
+  // Add a click event listener to the button
+  button.addEventListener('click', shakePageAndRedirect);
   

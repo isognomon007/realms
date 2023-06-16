@@ -1,4 +1,4 @@
-/* shake effect on index page */
+/* shake effect on index page 
 .container.shake {
     animation: shake 0.4s ease-in-out;
   }
@@ -10,5 +10,26 @@
     60% { transform: translateX(-10px); }
     80% { transform: translateX(10px); }
     100% { transform: translateX(0); }
+  }
+  
+  */
+  
+/* Shake and redirect on button */
+  @keyframes shake {
+    0% { transform: translate(0, 0); }
+    10% { transform: translate(-5px, 0); }
+    20% { transform: translate(5px, 0); }
+    30% { transform: translate(-5px, 0); }
+    40% { transform: translate(5px, 0); }
+    50% { transform: translate(-5px, 0); }
+    60% { transform: translate(5px, 0); }
+    70% { transform: translate(-5px, 0); }
+    80% { transform: translate(5px, 0); }
+    90% { transform: translate(-5px, 0); }
+    100% { transform: translate(0, 0); }
+  }
+  
+  .container.shake {
+    animation: shake 1s ease-in-out;
   }
   
