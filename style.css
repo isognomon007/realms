@@ -22,10 +22,11 @@ body {
 
 .container h1, .container p {
   color: #fff;
+  text-align: center;
 }
 
 .container button {
-  background-color: #000;
+  background-color: #006400;
   color: #fff;
   font-family: Arial, sans-serif;
   border: none;
@@ -34,10 +35,13 @@ body {
   margin-top: 10px;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .container button:hover {
-  background-color: #222;
+  background-color: #004f00;
+  transform: translateY(1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .container button:active {
