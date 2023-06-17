@@ -26,7 +26,6 @@ body {
 }
 
 .container button {
-  background-color: #006400;
   color: #fff;
   font-family: Arial, sans-serif;
   border: none;
@@ -39,7 +38,6 @@ body {
 }
 
 .container button:hover {
-  background-color: #004f00;
   transform: translateY(1px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
@@ -53,4 +51,15 @@ body {
     justify-content: center;
   }
   
-  }
+  /* Button Colors */
+
+  #enter .container button {background-color: #006400;}
+  #enter .container button:hover {background-color: #004f00;}
+
+  #grove .container button {background-color: #122b3a;}
+  #grove .container button:hover {background-color: #0c1d26;}
+
+  #path .container button {background-color: #196e47;}
+  #path .container button:hover {background-color: #135032;}
+
+  
