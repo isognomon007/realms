@@ -18,3 +18,10 @@ body#grove.tree {background-image: url('');}
 body#grove.tree {background-image: url('');}
 body#grove.tree {background-image: url('');}
 */
+
+.b {
+    background-position: bottom !important;
+  }
+  .zoom {
+  background-size: 150% !important;
+  }
