@@ -14,22 +14,23 @@
   
   */
   
-/* Shake and redirect on button */
-  @keyframes shake {
-    0% { transform: translate(0, 0); }
-    10% { transform: translate(-5px, 0); }
-    20% { transform: translate(5px, 0); }
-    30% { transform: translate(-5px, 0); }
-    40% { transform: translate(5px, 0); }
-    50% { transform: translate(-5px, 0); }
-    60% { transform: translate(5px, 0); }
-    70% { transform: translate(-5px, 0); }
-    80% { transform: translate(5px, 0); }
-    90% { transform: translate(-5px, 0); }
-    100% { transform: translate(0, 0); }
-    animation-duration: 2s; /* Increase the duration to make the shake longer */
-  }
-  
-  .container.shake {
-    animation: shake 1s ease-in-out;
-  }
+/* Shake and redirect on container */
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  10% { transform: translate(-5px, 0); }
+  20% { transform: translate(5px, 0); }
+  30% { transform: translate(-5px, 0); }
+  40% { transform: translate(5px, 0); }
+  50% { transform: translate(-5px, 0); }
+  60% { transform: translate(5px, 0); }
+  70% { transform: translate(-5px, 0); }
+  80% { transform: translate(5px, 0); }
+  90% { transform: translate(-5px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Apply the animation to the container */
+.container.shake {
+  animation: shake 1s ease-in-out;
+  animation-duration: 2s; /* Increase the duration to make the shake longer */
+}
