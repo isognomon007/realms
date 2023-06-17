@@ -22,6 +22,16 @@ body#grove.tree {background-image: url('');}
 .b {
     background-position: bottom !important;
   }
+  
+  @keyframes zoom {
+    0% {
+      background-size: 100% !important;
+    }
+    100% {
+      background-size: 150% !important;
+    }
+  }
+  
   .zoom {
-  background-size: 150% !important;
+    animation: zoom 5s infinite alternate;
   }
