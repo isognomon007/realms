@@ -11,8 +11,8 @@ body {
   overflow: hidden;
 }
 
-body.cb {
-  background-position: center bottom;
+.lb {
+  background-position: left bottom !important;
 }
 
 .container {
