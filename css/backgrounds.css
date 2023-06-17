@@ -33,5 +33,5 @@ body#grove.tree {background-image: url('');}
   }
   
   .zoom {
-    animation: zoom 5s infinite alternate;
+    animation: zoom 5s forwards;
   }
