@@ -21,6 +21,7 @@ body {
   border: 2px solid #000;
   margin: 20px;
   font-family: Arial, sans-serif;
+  min-height:567px;
 }
 
 .container h1, .container p {
