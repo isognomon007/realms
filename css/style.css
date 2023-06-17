@@ -11,8 +11,8 @@ body {
   overflow: hidden;
 }
 
-.lb {
-  background-position: left bottom !important;
+.b {
+  background-position: bottom !important;
 }
 
 .container {
