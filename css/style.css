@@ -14,6 +14,9 @@ body {
 .b {
   background-position: bottom !important;
 }
+.zoom {
+background-size: 120%;
+}
 
 .container {
   max-width: 400px;
