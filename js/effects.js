@@ -24,3 +24,7 @@
   // Add a click event listener to the button
   button.addEventListener('click', shakePageAndRedirect);
   
+  setTimeout(function() {
+    window.location.href = "./grove1.html"; // Replace with the desired URL for the redirect
+  }, 1000); // Increase the delay to 1000 milliseconds (1 second)
+  

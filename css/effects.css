@@ -27,9 +27,9 @@
     80% { transform: translate(5px, 0); }
     90% { transform: translate(-5px, 0); }
     100% { transform: translate(0, 0); }
+    animation-duration: 2s; /* Increase the duration to make the shake longer */
   }
   
   .container.shake {
     animation: shake 1s ease-in-out;
   }
-  
