@@ -11,3 +11,11 @@
     80% { transform: translateX(10px); }
     100% { transform: translateX(0); }
   }
+
+  .disoriented {
+    transform: scaleX(-1);
+  }
+  .disoriented .container {
+    transform: scaleX(-1);
+  }
+  
