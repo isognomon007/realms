@@ -11,6 +11,10 @@ body {
   overflow: hidden;
 }
 
+body.cb {
+  background-position: center bottom;
+}
+
 .container {
   max-width: 400px;
   padding: 20px;
