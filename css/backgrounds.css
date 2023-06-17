@@ -2,9 +2,13 @@ body#enter {background-image: url('https://images.unsplash.com/photo-15165283876
 
 body#grove {background-image: url('https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2405x1600/34c7ce009520488615b698462b20ed65/photo-1603882924554-4def74ff2aec.jpg');}
 body#grove.hole {background-image: url('https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2400x1600/31451d4f8031ef4e1c7681d8fb1e807c/photo-1634584374981-78e895954580.jpg');}
-body#grove.tree {background-image: url('https://images.unsplash.com/photo-1547401372-0ac4589c4d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3242&q=80');}
+body#grove.tree {background-image: url('https://images.unsplash.com/photo-1493166228553-4fa0fdb916e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80');}
 
 
 body#path {background-image: url('https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2400x1600/a8ac47e7e887e6e91e4556fffcb4f82f/photo-1507139722691-cc2c94e3a2b2.jpg');}
 body#path1 {background-image: url('https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2400x1600/00b207d4cccd1f5d104b210891878855/photo-1526749837599-b4eba9fd855e.jpg');}
 body#path2 {background-image: url('https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80');}
+
+/*
+body#grove.tree {background-image: url('');}
+*/
