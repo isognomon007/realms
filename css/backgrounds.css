@@ -1,3 +1,6 @@
 body#enter {background-image: url('https://images.unsplash.com/photo-1516528387618-afa90b13e000');}
+
 body#grove {background-image: url('https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2405x1600/34c7ce009520488615b698462b20ed65/photo-1603882924554-4def74ff2aec.jpg');}
+body#grove.tree {background-image: url('https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2400x1600/31451d4f8031ef4e1c7681d8fb1e807c/photo-1634584374981-78e895954580.jpg');}
+
 body#path {background-image: url('https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2400x1600/a8ac47e7e887e6e91e4556fffcb4f82f/photo-1507139722691-cc2c94e3a2b2.jpg');}
