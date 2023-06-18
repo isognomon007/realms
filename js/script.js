@@ -10,3 +10,9 @@ function preloadBackgrounds() {
   // Call the preloadBackgrounds function when the index page is loaded
   window.addEventListener('load', preloadBackgrounds);
   
+// Bypass CDN
+const username = 'isognomon007';
+const repository = 'realms';
+//const branch = 'main';
+//const filePath = 'path/to/file.css';
+const rawURL = `https://raw.githubusercontent.com/${username}/${repository}/`;
