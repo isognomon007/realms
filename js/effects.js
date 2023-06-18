@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
    var currentPosition = body.style.backgroundPosition;
    var positionX = 0; // Initial X position
    var positionY = 0; // Initial Y position
+   var shiftAmount = 10; // Amount to shift in pixels
  
    // Parse the current position values
    var matches = currentPosition.match(/(-?\d+)px (-?\d+)px/);
@@ -20,13 +21,13 @@ window.addEventListener('DOMContentLoaded', () => {
  
    // Adjust the position based on the direction
    if (direction === 'up') {
-     positionY -= 100; // Shift up by 10 pixels
+     positionY = Math.max(positionY - shiftAmount, -window.innerHeight); // Stop at the top edge
    } else if (direction === 'down') {
-     positionY += 100; // Shift down by 10 pixels
+     positionY = Math.min(positionY + shiftAmount, 0); // Stop at the bottom edge
    } else if (direction === 'left') {
-     positionX -= 100; // Shift left by 10 pixels
+     positionX = Math.max(positionX - shiftAmount, -window.innerWidth); // Stop at the left edge
    } else if (direction === 'right') {
-     positionX += 100; // Shift right by 10 pixels
+     positionX = Math.min(positionX + shiftAmount, 0); // Stop at the right edge
    }
  
    // Set the new background position
