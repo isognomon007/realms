@@ -5,7 +5,7 @@ body#grove.hole {background-image: url('https://trello-backgrounds.s3.amazonaws.
 body#grove.tree {background-image: url('https://images.unsplash.com/photo-1493166228553-4fa0fdb916e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80');}
 body#grove.sound {background-image: url('https://images.unsplash.com/photo-1628353524525-3acbbf318174?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80');}
 body#grove.sound {
-  background-position: 50px 0; /* Initial shift amount in pixels */
+  background-position: 0 0; /* Initial shift amount in pixels */
 }
 
 
