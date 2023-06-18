@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
   container.classList.add('shake');
   });
 
+  //Shift BG
   function shiftBackground(direction) {
    var body = document.body;
    var currentPosition = body.style.backgroundPosition;
@@ -19,13 +20,13 @@ window.addEventListener('DOMContentLoaded', () => {
  
    // Adjust the position based on the direction
    if (direction === 'up') {
-     positionY -= 100; // Shift up by 10 pixels
+     positionY -= 10; // Shift up by 10 pixels
    } else if (direction === 'down') {
-     positionY += 100; // Shift down by 10 pixels
+     positionY += 10; // Shift down by 10 pixels
    } else if (direction === 'left') {
-     positionX -= 100; // Shift left by 10 pixels
+     positionX -= 10; // Shift left by 10 pixels
    } else if (direction === 'right') {
-     positionX += 100; // Shift right by 10 pixels
+     positionX += 10; // Shift right by 10 pixels
    }
  
    // Set the new background position
