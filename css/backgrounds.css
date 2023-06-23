@@ -1,6 +1,6 @@
 body#enter {background-image: url('https://images.unsplash.com/photo-1516528387618-afa90b13e000');}
 
-body#grove {background-image: url('https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2405x1600/34c7ce009520488615b698462b20ed65/photo-1603882924554-4def74ff2aec.jpg');}
+body#grove, body#grove .reverse {background-image: url('https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2405x1600/34c7ce009520488615b698462b20ed65/photo-1603882924554-4def74ff2aec.jpg');}
 body#grove.hole {background-image: url('https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2400x1600/31451d4f8031ef4e1c7681d8fb1e807c/photo-1634584374981-78e895954580.jpg');}
 body#grove.tree {background-image: url('https://images.unsplash.com/photo-1493166228553-4fa0fdb916e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80');}
 body#grove.sound {background-image: url('https://images.unsplash.com/photo-1628353524525-3acbbf318174?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80');}
@@ -14,7 +14,7 @@ body#path1 {background-image: url('https://trello-backgrounds.s3.amazonaws.com/S
 body#path2 {background-image: url('https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80');}
 
 /*
-Rock with number: body#grove.tree {background-image: url('https://images.unsplash.com/photo-1628353524525-3acbbf318174?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80');}
+Rock with number: body#grove.tree {background-image: url('');}
 body#grove.tree {background-image: url('');}
 body#grove.tree {background-image: url('');}
 body#grove.tree {background-image: url('');}
@@ -39,3 +39,15 @@ body#grove.tree {background-image: url('');}
 .zoom {
     animation: zoom 5s forwards;
   }
+.reverse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: scaleX(-1); /* Reverse the background image horizontally */
+  }
+  
