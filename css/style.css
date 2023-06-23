@@ -63,7 +63,6 @@ body {
   }
   
   /* Button Colors */
-
   #enter .container button {background-color: #006400;}
   #enter .container button:hover {background-color: #004f00;}
 
@@ -73,4 +72,4 @@ body {
   #path .container button {background-color: #196e47;}
   #path .container button:hover {background-color: #135032;}
 
-  
+  button.inactive {}

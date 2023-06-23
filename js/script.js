@@ -20,5 +20,19 @@ function preloadBackgrounds() {
   
   divNav.appendChild(link);
   document.body.appendChild(divNav);
+
+  // Checks for buttons without an onclick event and adds a class:
+  // Select all <button> tags on the page
+  var buttonTags = document.querySelectorAll('button');
+
+  // Iterate over the <button> tags
+  buttonTags.forEach(function(buttonTag) {
+    // Check if the onclick attribute is missing or empty
+    if (!buttonTag.getAttribute('onclick')) {
+      buttonTag.classList.add('inactive');
+      button.disabled = true;
+    }
+  });
+
   
   
