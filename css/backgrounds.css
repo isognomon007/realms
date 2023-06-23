@@ -48,6 +48,6 @@ body#grove.tree {background-image: url('');}
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    transform: scaleX(-1); /* Reverse the background image horizontally */
+    /* transform: scaleX(-1); /* Reverse the background image horizontally */
   }
   

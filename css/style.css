@@ -9,6 +9,8 @@ body {
   background-color:#000;
   background-attachment: fixed !important;
   overflow: hidden;
+  margin:0;
+  padding:0;
 }
 
 .container {
