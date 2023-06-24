@@ -2,7 +2,7 @@
 function preloadBackgrounds() {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = 'backgrounds.css';
+    link.href = '/realms/css/backgrounds.css';
   
     document.head.appendChild(link);
   }
