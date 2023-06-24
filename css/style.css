@@ -31,9 +31,13 @@ body {
   min-height:567px;
 }
 
-.container h1, .container p {
+.container h1 {
   color: #fff;
   text-align: center;
+}
+.container p {
+  color: #fff;
+  text-align: left;
 }
 
 .container button {
