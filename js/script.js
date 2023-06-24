@@ -1,15 +1,28 @@
 // Preload Background Images
-function preloadBackgrounds() {
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = '/realms/css/backgrounds.css';
-  
-    document.head.appendChild(link);
-  }
-  
-  // Call the preloadBackgrounds function when the index page is loaded
-  window.addEventListener('load', preloadBackgrounds);
+function preloadImagesFromCSS(cssUrl) {
+  fetch(cssUrl)
+    .then(response => response.text())
+    .then(cssText => {
+      const urlRegex = /url\(['"]?([^'")]+)['"]?\)/g;
+      const imageUrls = cssText.match(urlRegex);
 
+      if (imageUrls) {
+        imageUrls.forEach(imageUrl => {
+          const url = imageUrl.match(/url\(['"]?([^'")]+)['"]?\)/)[1];
+          const image = new Image();
+          image.src = url;
+        });
+      }
+    })
+    .catch(error => {
+      console.error(`Failed to preload images from CSS: ${error}`);
+    });
+}
+
+// Call the preloadImagesFromCSS function with your CSS file URL
+preloadImagesFromCSS('https://isognomon007.github.io/realms/css/backgrounds.css');
+
+  
   // Checks for buttons without an onclick event and adds a class:
   // Select all <button> tags on the page
   var buttonTags = document.querySelectorAll('button');
