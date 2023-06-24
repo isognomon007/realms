@@ -79,7 +79,7 @@ var navElement = document.createElement('div');
 navElement.id = 'nav';
 
 var backpackItem1 = createBackpackItem('https://lh3.google.com/u/6/d/1BkvSarSc1XXyjkpFEBBBSqy2MrbW7kIF=w2682-h1224-iv1', 'This is your backpack item 1.');
-var backpackItem2 = createBackpackItem('https://example.com/path/to/image2.jpg', 'This is your backpack item 2.');
+// var backpackItem2 = createBackpackItem('https://example.com/path/to/image2.jpg', 'This is your backpack item 2.');
 
 navElement.appendChild(backpackItem1);
 navElement.appendChild(backpackItem2);
