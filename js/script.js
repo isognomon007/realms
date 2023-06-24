@@ -10,17 +10,6 @@ function preloadBackgrounds() {
   // Call the preloadBackgrounds function when the index page is loaded
   window.addEventListener('load', preloadBackgrounds);
 
-  // Injects Navigation div
-  var divNav = document.createElement('div');
-  divNav.id = 'nav';
-  
-  var link = document.createElement('a');
-  link.href = 'https://isognomon007.github.io/realms';
-  link.textContent = 'Home';
-  
-  divNav.appendChild(link);
-  document.body.appendChild(divNav);
-
   // Checks for buttons without an onclick event and adds a class:
   // Select all <button> tags on the page
   var buttonTags = document.querySelectorAll('button');
@@ -34,7 +23,22 @@ function preloadBackgrounds() {
     }
   });
 
-/////////// EVERYTHING BELOW IS BACKPACK RELATED ///////////
+/////////// EVERYTHING BELOW IS NAV RELATED ///////////
+
+// Nav //
+  // Injects Navigation div
+  var divNav = document.createElement('div');
+  divNav.id = 'nav';
+  
+  var link = document.createElement('a');
+  link.href = 'https://isognomon007.github.io/realms';
+  link.textContent = 'Home';
+  
+  divNav.appendChild(link);
+  document.body.appendChild(divNav);
+
+
+/////////// EVERYTHING BELOW IS BACKPACK ///////////
 
 // Create the backpack object
 var backpack = document.createElement('div');
