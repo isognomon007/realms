@@ -76,4 +76,5 @@ body {
   #path .container button {background-color: #196e47;}
   #path .container button:hover {background-color: #135032;}
 
-  button.inactive {}
+  button.inactive {background-color:#666 !important}
+  button.inactive:hover {background-color: #666 !important;}
