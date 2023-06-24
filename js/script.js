@@ -34,5 +34,21 @@ function preloadBackgrounds() {
     }
   });
 
+  // Create the backpack object
+var backpack = document.createElement('div');
+backpack.id = 'backpack';
+backpack.innerHTML = '<a href="#" onclick="openPopup();"><img src="https://lh3.google.com/u/6/d/12fIL64uK8ysvxLeXnf8CKkzMUyGPMMF1=w2682-h1338-iv2" alt="Backpack Icon"></a>';
+
+// Append the backpack object to the #nav element
+var navElement = document.getElementById('nav');
+navElement.appendChild(backpack);
+
+// Function to open the popup window
+function openPopup() {
+  window.open('', '_blank', 'width=400,height=200');
+  window.document.write('<p>This is your backpack.</p>');
+  window.document.close();
+}
+
   
   
