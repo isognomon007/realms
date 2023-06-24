@@ -25,32 +25,29 @@ function preloadBackgrounds() {
 
 /////////// EVERYTHING BELOW IS NAV RELATED ///////////
 
-// Nav //
-  // Injects Navigation div
-  var divNav = document.createElement('div');
-  divNav.id = 'nav';
+// Function to create a new backpack item
+function createBackpackItem(imageSrc, overlayText) {
+  var backpackItem = document.createElement('div');
+  backpackItem.classList.add('backpack-item');
   
-  var link = document.createElement('a');
-  link.href = 'https://isognomon007.github.io/realms';
-  link.textContent = 'Home';
+  var imageLink = document.createElement('a');
+  imageLink.href = '#';
+  imageLink.addEventListener('click', function() {
+    toggleOverlay(overlayText);
+  });
   
-  divNav.appendChild(link);
-  document.body.appendChild(divNav);
-
-
-/////////// EVERYTHING BELOW IS BACKPACK ///////////
-
-// Create the backpack object
-var backpack = document.createElement('div');
-backpack.id = 'backpack';
-backpack.innerHTML = '<a href="#" onclick="toggleOverlay();"><img src="https://lh3.google.com/u/6/d/1BkvSarSc1XXyjkpFEBBBSqy2MrbW7kIF=w2682-h1224-iv1" alt="Backpack"></a>';
-
-// Append the backpack object to the #nav element
-var navElement = document.getElementById('nav');
-navElement.appendChild(backpack);
+  var image = document.createElement('img');
+  image.src = imageSrc;
+  image.alt = 'Backpack Item';
+  
+  imageLink.appendChild(image);
+  backpackItem.appendChild(imageLink);
+  
+  return backpackItem;
+}
 
 // Function to toggle the overlay
-function toggleOverlay() {
+function toggleOverlay(overlayText) {
   var overlay = document.getElementById('overlay');
   
   if (overlay) {
@@ -58,7 +55,15 @@ function toggleOverlay() {
   } else {
     overlay = document.createElement('div');
     overlay.id = 'overlay';
-    overlay.innerHTML = '<div class="overlay-content"><p>This is your backpack.</p></div>';
+    
+    var overlayContent = document.createElement('div');
+    overlayContent.classList.add('overlay-content');
+    
+    var overlayTextElement = document.createElement('p');
+    overlayTextElement.textContent = overlayText;
+    
+    overlayContent.appendChild(overlayTextElement);
+    overlay.appendChild(overlayContent);
     
     overlay.addEventListener('click', function() {
       overlay.remove();
@@ -68,6 +73,14 @@ function toggleOverlay() {
   }
 }
 
+// Append the backpack items to the #nav element within the #content element
+var contentElement = document.getElementById('content');
+var navElement = document.createElement('div');
+navElement.id = 'nav';
 
-  
-  
+var backpackItem1 = createBackpackItem('https://lh3.google.com/u/6/d/1BkvSarSc1XXyjkpFEBBBSqy2MrbW7kIF=w2682-h1224-iv1', 'This is your backpack item 1.');
+var backpackItem2 = createBackpackItem('https://example.com/path/to/image2.jpg', 'This is your backpack item 2.');
+
+navElement.appendChild(backpackItem1);
+navElement.appendChild(backpackItem2);
+contentElement.appendChild(navElement);
