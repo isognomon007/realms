@@ -34,21 +34,36 @@ function preloadBackgrounds() {
     }
   });
 
-  // Create the backpack object
+/////////// EVERYTHING BELOW IS BACKPACK RELATED ///////////
+
+// Create the backpack object
 var backpack = document.createElement('div');
 backpack.id = 'backpack';
-backpack.innerHTML = '<a href="#" onclick="openPopup();"><img src="https://lh3.google.com/u/6/d/12fIL64uK8ysvxLeXnf8CKkzMUyGPMMF1=w2682-h1338-iv2" alt="Backpack Icon"></a>';
+backpack.innerHTML = '<a href="#" onclick="toggleOverlay();"><img src="https://lh3.google.com/u/6/d/12fIL64uK8ysvxLeXnf8CKkzMUyGPMMF1=w2682-h1338-iv2" alt="Backpack Icon"></a>';
 
 // Append the backpack object to the #nav element
 var navElement = document.getElementById('nav');
 navElement.appendChild(backpack);
 
-// Function to open the popup window
-function openPopup() {
-  window.open('', '_blank', 'width=400,height=200');
-  window.document.write('<p>This is your backpack.</p>');
-  window.document.close();
+// Function to toggle the overlay
+function toggleOverlay() {
+  var overlay = document.getElementById('overlay');
+  
+  if (overlay) {
+    overlay.remove();
+  } else {
+    overlay = document.createElement('div');
+    overlay.id = 'overlay';
+    overlay.innerHTML = '<div class="overlay-content"><p>This is your backpack.</p></div>';
+    
+    overlay.addEventListener('click', function() {
+      overlay.remove();
+    });
+    
+    document.body.appendChild(overlay);
+  }
 }
+
 
   
   
