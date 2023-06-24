@@ -39,7 +39,7 @@ function preloadBackgrounds() {
 // Create the backpack object
 var backpack = document.createElement('div');
 backpack.id = 'backpack';
-backpack.innerHTML = '<a href="#" onclick="toggleOverlay();"><img src="https://lh3.google.com/u/6/d/12fIL64uK8ysvxLeXnf8CKkzMUyGPMMF1=w2682-h1338-iv2" alt="Backpack Icon"></a>';
+backpack.innerHTML = '<a href="#" onclick="toggleOverlay();"><img src="https://lh3.google.com/u/6/d/1BkvSarSc1XXyjkpFEBBBSqy2MrbW7kIF=w2682-h1224-iv1" alt="Backpack"></a>';
 
 // Append the backpack object to the #nav element
 var navElement = document.getElementById('nav');
