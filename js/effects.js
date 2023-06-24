@@ -1,8 +1,11 @@
-// shake effect on index page
+// Shake Effect 
 window.addEventListener('DOMContentLoaded', () => {
-   const container = document.querySelector('.container.shaky');
-  container.classList.add('shake');
-  });
+  const container = document.querySelector('.container.shaky');
+  if (container && container.classList.contains('shaky')) {
+    container.classList.add('shake');
+  }
+});
+
 
   //Shift BG
   function shiftBackground(direction) {
