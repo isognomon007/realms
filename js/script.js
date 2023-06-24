@@ -23,18 +23,19 @@ function preloadImagesFromCSS(cssUrl) {
 preloadImagesFromCSS('https://isognomon007.github.io/realms/css/backgrounds.css');
 
   
-  // Checks for buttons without an onclick event and adds a class:
-  // Select all <button> tags on the page
-  var buttonTags = document.querySelectorAll('button');
+// Checks for buttons without an onclick event and adds a class:
+// Select all <button> tags on the page
+var buttonTags = document.querySelectorAll('button');
 
-  // Iterate over the <button> tags
-  buttonTags.forEach(function(buttonTag) {
-    // Check if the onclick attribute is missing or empty
-    if (!buttonTag.getAttribute('onclick')) {
-      buttonTag.classList.add('inactive');
-      button.disabled = true;
-    }
-  });
+// Iterate over the <button> tags
+buttonTags.forEach(function(buttonTag) {
+  // Check if the onclick attribute is missing or empty
+  if (!buttonTag.getAttribute('onclick')) {
+    buttonTag.classList.add('inactive');
+    buttonTag.disabled = true; // Disable the current button
+  }
+});
+
 
 /////////// EVERYTHING BELOW IS NAV RELATED ///////////
 
