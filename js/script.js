@@ -116,6 +116,19 @@ function handleBackpackClick() {
 if (sessionStorage.getItem('backpackClicked')) {
   // Show a message indicating that the button was clicked
   console.log('Backpack button was clicked.');
+
+
+  // Clear the session
+  function clearSession() {
+    sessionStorage.clear();
+    console.log('Session cleared!');
+  }
+  
+  // Creats button to clear session in nav
+  var buttonContainer = document.getElementById('nav');
+  buttonContainer.innerHTML = `<button id="clear" onclick="clearSession()">Clear Session</button>`;
+
+  
 }
 
 // Add event listener to the backpack button
