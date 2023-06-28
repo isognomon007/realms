@@ -135,14 +135,7 @@ if (sessionStorage.getItem('backpackClicked')) {
 //////////////////////////////////////////////////////////////////////////////////////////
 
 // Checks if backpack button has been clicked:
-if (sessionStorage.getItem('backpackClicked')) {
-  // Creats button to clear session in nav
-  var divClear = document.createElement('div');
-  divClear.id = 'clearsession';
-  document.body.appendChild(divClear);
-  var buttonContainer = document.getElementById('clearsession');
-  document.body.innerHTML = `<button id="clear" onclick="clearSession()">Clear Session</button>`;
-}
+
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
