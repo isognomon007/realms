@@ -135,6 +135,23 @@ if (sessionStorage.getItem('backpackClicked')) {
 //////////////////////////////////////////////////////////////////////////////////////////
 
 // Checks if backpack button has been clicked:
+if (sessionStorage.getItem('backpackClicked')) {
+  // Create "clearsession" div
+  var divClear = document.createElement('div');
+  divClear.id = 'clearsession';
+
+  // Create "clear" button 
+  var button = document.createElement('button');
+  button.id = 'clear';
+  button.textContent = 'Clear Session';
+  button.onclick = clearSession;
+
+  // Append button to div
+  divClear.appendChild(button);
+
+  // Append divClear to body
+  document.body.appendChild(divClear);
+}
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
