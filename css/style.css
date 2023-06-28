@@ -103,6 +103,8 @@ body {
     background-color: #fff;
     padding: 20px;
   }
+
+  .backpack-item img {width:15px;height:15px;}
   
   /* Add any additional styling for the overlay content */
   
