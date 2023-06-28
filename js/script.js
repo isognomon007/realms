@@ -105,3 +105,26 @@ contentElement.appendChild(navElement);
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////  COUNTER  ////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////
+
+// Check if the backpack button was clicked
+function trackBackpackClick() {
+  // Set a flag in sessionStorage to indicate that the backpack button was clicked
+  sessionStorage.setItem('backpackClicked', 'true');
+}
+
+// Check if the backpack button was clicked during the session
+function isBackpackClicked() {
+  // Retrieve the value of the flag from sessionStorage
+  const clicked = sessionStorage.getItem('backpackClicked');
+  return clicked === 'true';
+}
+
+// Example usage
+const backpackButton = document.getElementById('backpack');
+backpackButton.addEventListener('click', trackBackpackClick);
+
+// Check if the backpack button was clicked
+if (isBackpackClicked()) {
+  // Perform actions specific to when the backpack button was clicked
+  console.log('Backpack button was clicked during this session.');
+}
