@@ -125,6 +125,7 @@ if (sessionStorage.getItem('backpackClicked')) {
   // Clear the session
   function clearSession() {
     sessionStorage.clear();
+    button.style.display='none'; // Hide the button
     console.log('Session cleared!');
   }
   
