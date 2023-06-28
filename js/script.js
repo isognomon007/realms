@@ -112,11 +112,15 @@ function handleBackpackClick() {
   sessionStorage.setItem('backpackClicked', 'true');
 }
 
-// Check if the "backpack" button was clicked in a previous session
+// If BACKPACK button was clicked in a previous session:
+/////////////////////////////////////////////////////////
 if (sessionStorage.getItem('backpackClicked')) {
   // Show a message indicating that the button was clicked
   console.log('Backpack button was clicked.');
 
+ // Show the 'nav' element:
+  var navElement = document.getElementById('nav');
+  navElement.style.display = 'block';
 
   // Clear the session
   function clearSession() {
@@ -130,6 +134,7 @@ if (sessionStorage.getItem('backpackClicked')) {
 
   
 }
+///////////////////////////////////////////////////////////
 
 // Add event listener to the backpack button
 var backpackButton = document.getElementById('backpack');
