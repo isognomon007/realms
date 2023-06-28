@@ -125,13 +125,15 @@ if (sessionStorage.getItem('backpackClicked')) {
   // Clear the session
   function clearSession() {
     sessionStorage.clear();
+    var button = document.getElementById('clear');
     button.style.display='none'; // Hide the button
+    sessionStorage.clear();
     console.log('Session cleared!');
   }
   
   // Creats button to clear session in nav
-  var buttonContainer = document.getElementById('nav');
-  buttonContainer.innerHTML = `<button id="clear" onclick="clearSession()">Clear Session</button>`;
+//  var buttonContainer = document.getElementById('nav');
+//  buttonContainer.innerHTML = `<button id="clear" onclick="clearSession()">Clear Session</button>`;
 
   
 }
