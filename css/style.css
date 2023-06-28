@@ -13,13 +13,6 @@ body {
   padding:0;
 }
 
-#nav {
-  position:absolute;
-  bottom:0;
-  right:0;
-  display:none;
-}
-
 .container {
   position:relative;
   max-width: 400px;
@@ -87,6 +80,13 @@ body {
   
   /* Icon Generator: https://thenounproject.com/icon/backpack-2551/ */
 
+  #nav {
+    position:absolute;
+    top:0;
+    right:-50px;
+    display:none;
+  }
+
   #overlay {
     position: fixed;
     top: 0;
@@ -105,7 +105,7 @@ body {
     padding: 20px;
   }
 
-  .backpack-item img {width:15px;height:15px;}
+  .backpack-item img {width:35px;height:35px;}
   
   /* Add any additional styling for the overlay content */
   
