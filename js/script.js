@@ -106,14 +106,15 @@ contentElement.appendChild(navElement);
 /////////////////////////////////  COUNTER  ////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////
 
-// Function to handle the backpack button click event
+// Function to handle the backpack button click event (this happens once on click)
 function handleBackpackClick() {
   // Set the flag in sessionStorage to indicate the button was clicked
   sessionStorage.setItem('backpackClicked', 'true');
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////
 // If BACKPACK button was clicked in a previous session:
-/////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
 if (sessionStorage.getItem('backpackClicked')) {
   // Show a message indicating that the button was clicked
   console.log('Backpack button was clicked.');
@@ -130,14 +131,18 @@ if (sessionStorage.getItem('backpackClicked')) {
     sessionStorage.clear();
     console.log('Session cleared!');
   }
-  
-  // Creats button to clear session in nav
-  var buttonContainer = document.getElementById('nav');
-  buttonContainer.innerHTML = `<button id="clear" onclick="clearSession()">Clear Session</button>`;
-
-  
 }
-///////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+// Checks if backpack button has been clicked:
+if (sessionStorage.getItem('backpackClicked')) {
+  // Creats button to clear session in nav
+  document.body.innerHTML += '<div id="clearsession"></div>';
+  var buttonContainer = document.getElementById('clearsession');
+  buttonContainer.innerHTML = `<button id="clear" onclick="clearSession()">Clear Session</button>`;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
 
 // Add event listener to the backpack button
 var backpackButton = document.getElementById('backpack');
