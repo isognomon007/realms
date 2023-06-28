@@ -161,3 +161,13 @@ var backpackButton = document.getElementById('backpack');
 if (backpackButton) {
   backpackButton.addEventListener('click', handleBackpackClick);
 }
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+function startOver() {
+  // Clear the session
+  sessionStorage.clear();
+  
+  // Redirect to a specific URL
+  window.location.href = '/';
+}
