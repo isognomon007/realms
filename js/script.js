@@ -169,5 +169,5 @@ function startOver() {
   sessionStorage.clear();
   
   // Redirect to a specific URL
-  window.location.href = '/';
+  window.location.href = '/realms/';
 }
