@@ -40,6 +40,55 @@ buttonTags.forEach(function(buttonTag) {
 //////////////////////////////  NAVIGATION  ////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////
 
+// Function to create a new backpack item
+function createBackpackItem(imageSrc, overlayText) {
+  var backpackItem = document.createElement('div');
+  backpackItem.classList.add('backpack-item');
+  
+  var imageLink = document.createElement('a');
+  imageLink.href = '#';
+  imageLink.addEventListener('click', function() {
+    toggleOverlay(overlayText);
+  });
+  
+  var image = document.createElement('img');
+  image.src = imageSrc;
+  image.alt = 'Backpack Item';
+  
+  imageLink.appendChild(image);
+  backpackItem.appendChild(imageLink);
+  
+  return backpackItem;
+}
+
+// Function to toggle the overlay
+function toggleOverlay(overlayText) {
+  var overlay = document.getElementById('overlay');
+  
+  if (overlay) {
+    overlay.remove();
+  } else {
+    overlay = document.createElement('div');
+    overlay.id = 'overlay';
+    
+    var overlayContent = document.createElement('div');
+    overlayContent.classList.add('overlay-content');
+    
+    var overlayTextElement = document.createElement('p');
+    overlayTextElement.textContent = overlayText;
+    
+    overlayContent.appendChild(overlayTextElement);
+    overlay.appendChild(overlayContent);
+    
+    overlay.addEventListener('click', function() {
+      overlay.remove();
+    });
+    
+    document.body.appendChild(overlay);
+  }
+}
+
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////
