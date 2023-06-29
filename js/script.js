@@ -153,7 +153,6 @@ if (sessionStorage.getItem('backpackClicked')) {
   document.body.appendChild(divClear);
 }
 
-
 //////////////////////////////////////////////////////////////////////////////////////////
 
 // Add event listener to the backpack button
@@ -161,7 +160,6 @@ var backpackButton = document.getElementById('backpack');
 if (backpackButton) {
   backpackButton.addEventListener('click', handleBackpackClick);
 }
-
 
 //////////////////////////////////////////////////////////////////////////////////////////
 function startOver() {
@@ -171,3 +169,24 @@ function startOver() {
   // Redirect to a specific URL
   window.location.href = '/realms';
 }
+
+///// testing:
+
+// Fetch HTML content from a specific page
+fetch('/realms/bag.html')
+  .then(response => response.text())
+  .then(html => {
+    // Create a temporary container element
+    const container = document.createElement('div');
+    container.innerHTML = html;
+
+    // Extract the desired content from the source page
+    const extractedContent = container.querySelector('#content-to-extract');
+
+    // Insert the extracted content into the target page
+    const targetContainer = document.getElementById('nav');
+    targetContainer.appendChild(extractedContent);
+  })
+  .catch(error => {
+    console.error('Error fetching HTML:', error);
+  });
