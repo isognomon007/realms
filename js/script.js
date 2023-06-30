@@ -146,8 +146,8 @@ if (sessionStorage.getItem('backpackClicked')) {
   navElement.style.display = 'block';
 */
  // Show the items element:
- var itemsElement = document.getElementById('items');
- itemsElement.style.display = 'block';
+ //var itemsElement = document.getElementById('items');
+ //itemsElement.style.display = 'block';
 
   // Clear the session
   function clearSession() {
