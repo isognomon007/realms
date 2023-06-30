@@ -41,7 +41,7 @@ buttonTags.forEach(function(buttonTag) {
 ////////////////////////////////////////////////////////////////////////////////////////
 
 // Function to create a new backpack item
-/function createBackpackItem(imageSrc, overlayText) {
+function createBackpackItem(imageSrc, overlayText) {
   var backpackItem = document.createElement('div');
   backpackItem.classList.add('backpack-item');
   
