@@ -181,7 +181,7 @@ fetch('/realms/bag.html')
     container.innerHTML = html;
 
     // Extract the desired content from the source page
-    const extractedContent = container.querySelector('#content-to-extract');
+    const extractedContent = container.querySelector('#items');
 
     // Insert the extracted content into the target page
     const targetContainer = document.getElementById('content');

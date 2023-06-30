@@ -93,6 +93,13 @@ body {
     display:none;
   }
 
+  #items {
+    position:absolute;
+    top:0;
+    right:-50px;
+    /* display:none; */
+  }
+
   #overlay {
     position: fixed;
     top: 0;
