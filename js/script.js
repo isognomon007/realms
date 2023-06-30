@@ -60,7 +60,7 @@ fetch('/realms/bag.html')
   });
 
   ///////////////////////////////////////////////////////////////////////////////////////
-
+/*
 // Function to create a new backpack item
 function createBackpackItem(imageSrc, overlayText) {
   var backpackItem = document.createElement('div');
@@ -121,7 +121,7 @@ navElement.appendChild(backpackItem1);
 navElement.appendChild(backpackItem2);
 contentElement.appendChild(navElement);
 
-
+*/
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////  COUNTER  ////////////////////////////////////////////
@@ -141,8 +141,13 @@ if (sessionStorage.getItem('backpackClicked')) {
   console.log('Backpack button was clicked.');
 
  // Show the 'nav' element:
+ /*
   var navElement = document.getElementById('nav');
   navElement.style.display = 'block';
+*/
+ // Show the items element:
+ var itemsElement = document.getElementById('items');
+ itemsElement.style.display = 'block';
 
   // Clear the session
   function clearSession() {
