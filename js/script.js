@@ -184,7 +184,7 @@ function startOver() {
     const extractedContent = container.querySelector('#content-to-extract');
 
     // Insert the extracted content into the target page
-    const targetContainer = document.getElementById('story');
+    const targetContainer = document.getElementById('content');
     targetContainer.appendChild(extractedContent);
   })
   .catch(error => {
