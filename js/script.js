@@ -172,24 +172,5 @@ function startOver() {
 
 ///// testing:
 
-// Fetch HTML content from a specific page - try this after it's working again, this is the HTML fetch 
-  fetch('/realms/bag.html')
-  .then(response => response.text())
-  .then(html => {
-    // Create a temporary container element
-    const container = document.createElement('div');
-    container.innerHTML = html;
-
-    // Extract the desired content from the source page
-    const extractedContent = container.querySelector('#content-to-extract');
-
-    // Insert the extracted content into the target page
-    const targetContainer = document.getElementById('nav');
-    targetContainer.appendChild(extractedContent);
-  })
-  .catch(error => {
-    console.error('Error fetching HTML:', error);
-  });
-
   //
   
