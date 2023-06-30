@@ -172,8 +172,8 @@ function startOver() {
 
 ///// testing:
 
-// Fetch HTML content from a specific page - try this after it's working again, this is the HTML fetch code
- fetch('/realms/bag.html')
+// Fetch HTML content from a specific page - try this after it's working again, this is the HTML fetch 
+  fetch('/realms/bag.html')
   .then(response => response.text())
   .then(html => {
     // Create a temporary container element
