@@ -41,7 +41,7 @@ buttonTags.forEach(function(buttonTag) {
 ////////////////////////////////////////////////////////////////////////////////////////
 
 // Function to create a new backpack item
-/*function createBackpackItem(imageSrc, overlayText) {
+/function createBackpackItem(imageSrc, overlayText) {
   var backpackItem = document.createElement('div');
   backpackItem.classList.add('backpack-item');
   
@@ -99,30 +99,7 @@ var backpackItem2 = createBackpackItem('https://lh3.google.com/u/6/d/1BkvSarSc1X
 navElement.appendChild(backpackItem1);
 navElement.appendChild(backpackItem2);
 contentElement.appendChild(navElement);
-*/
 
-
-
-// Fetch HTML content from a specific page - try this after it's working again, this is the HTML fetch 
-fetch('/realms/bag.html')
-.then(response => response.text())
-.then(html => {
-  // Create a temporary container element
-  const container = document.createElement('div');
-  container.innerHTML = html;
-
-  // Extract the desired content from the source page
-  const extractedContent = container.querySelector('#nav');
-
-  // Insert the extracted content into the target page
-  const targetContainer = document.getElementById('content');
-  targetContainer.appendChild(extractedContent);
-})
-.catch(error => {
-  console.error('Error fetching HTML:', error);
-});
-
-//
 
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -192,4 +169,27 @@ function startOver() {
   // Redirect to a specific URL
   window.location.href = '/realms';
 }
+
+///// testing:
+
+// Fetch HTML content from a specific page - try this after it's working again, this is the HTML fetch 
+  fetch('/realms/bag.html')
+  .then(response => response.text())
+  .then(html => {
+    // Create a temporary container element
+    const container = document.createElement('div');
+    container.innerHTML = html;
+
+    // Extract the desired content from the source page
+    const extractedContent = container.querySelector('#content-to-extract');
+
+    // Insert the extracted content into the target page
+    const targetContainer = document.getElementById('content');
+    targetContainer.appendChild(extractedContent);
+  })
+  .catch(error => {
+    console.error('Error fetching HTML:', error);
+  });
+
+  //
   
