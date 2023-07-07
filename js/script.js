@@ -161,40 +161,45 @@ if (sessionStorage.getItem('backpackClicked')) {
   // Append divClear to body
   document.body.appendChild(divClear);
 
+
+  /////////////////////////////////////
   // Fetch HTML content from bag.html
-fetch('/realms/bag.html')
-.then(response => response.text())
-.then(html => {
-  // Create a temporary container element
-  const container = document.createElement('div');
-  container.innerHTML = html;
+  /////////////////////////////////////
+  fetch('/realms/bag.html')
+  .then(response => response.text())
+  .then(html => {
+    // Create a temporary container element
+    const container = document.createElement('div');
+    container.innerHTML = html;
 
-  // Extract the desired content from the source page
-  const extractedContent = container.querySelector('#items');
+    // Extract the desired content from the source page
+    const extractedContent = container.querySelector('#items');
 
-  // Insert the extracted content into the target page
-  const targetContainer = document.getElementById('content');
-  targetContainer.appendChild(extractedContent);
-})
-.catch(error => {
-  console.error('Error fetching HTML:', error);
-});
+    // Insert the extracted content into the target page
+    const targetContainer = document.getElementById('content');
+    targetContainer.appendChild(extractedContent);
+  })
+  .catch(error => {
+    console.error('Error fetching HTML:', error);
+  });
+  /////////////////////////////////////
 
-}
+} // End Checks if backpack button has been clicked
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
-// Add event listener to the backpack button
+// Add event listener to the backpack button (used to set session)
 var backpackButton = document.getElementById('backpack');
 if (backpackButton) {
   backpackButton.addEventListener('click', handleBackpackClick);
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
+
+// Reset button
 function startOver() {
   // Clear the session
   sessionStorage.clear();
-  
   // Redirect to a specific URL
   window.location.href = '/realms';
 }
