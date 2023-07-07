@@ -156,6 +156,7 @@ if (sessionStorage.getItem('backpackClicked')) {
     button.style.display='none'; // Hide the button
     sessionStorage.clear();
     console.log('Session cleared!');
+    window.location.href = '/'; // Redirect to the root directory index page
   }
 }
 //////////////////////////////////////////////////////////////////////////////////////////
