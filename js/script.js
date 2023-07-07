@@ -198,7 +198,7 @@ function startOver() {
 }
 
 // Fetch HTML content from bag.html if 'backpackClicked' is present in sessionStorage
-if (sessionStorage.getItem('backpackClicked')) {
+if (sessionStorage.getItem('backpackClicked') === 'true') {
   fetch('/realms/bag.html')
     .then(response => response.text())
     .then(html => {
@@ -217,4 +217,5 @@ if (sessionStorage.getItem('backpackClicked')) {
       console.error('Error fetching HTML:', error);
     });
 }
+
 
