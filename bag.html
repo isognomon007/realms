@@ -11,6 +11,23 @@
      <!--
      <button id="restart" onclick="startOver()">Restart</button>
      -->
+     <br />
+
+     <a id="bag" onclick="redirect()"><img src="https://lh3.google.com/u/6/d/1BkvSarSc1XXyjkpFEBBBSqy2MrbW7kIF=w2682-h1224-iv1" /></a>
+
+<script>
+function redirect() {
+  if (window.location.pathname === '/realms/index2.html') {
+    window.location.href = '/realms/index3.html';
+  } else {
+    // Default redirection if the current page doesn't match the condition
+    window.location.href = '/realms/index.html';
+  }
+}
+</script>
+
+
+
     </div>
 </body>
 </html>
