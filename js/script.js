@@ -197,25 +197,5 @@ function startOver() {
   window.location.href = '/realms';
 }
 
-// Fetch HTML content from bag.html if 'backpackClicked' is present in sessionStorage
-if (sessionStorage.getItem('backpackClicked') === 'true') {
-  fetch('/realms/bag.html')
-    .then(response => response.text())
-    .then(html => {
-      // Create a temporary container element
-      const container = document.createElement('div');
-      container.innerHTML = html;
-
-      // Extract the desired content from the source page
-      const extractedContent = container.querySelector('#items');
-
-      // Insert the extracted content into the target page
-      const targetContainer = document.getElementById('content');
-      targetContainer.appendChild(extractedContent);
-    })
-    .catch(error => {
-      console.error('Error fetching HTML:', error);
-    });
-}
 
 
